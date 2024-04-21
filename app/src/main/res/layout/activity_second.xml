@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="156dp"
+        android:text="飲料 : "
+        android:textColor="@color/w"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMain" />
+
+    <CheckBox
+        android:id="@+id/chbDuck"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:buttonTint="@color/check_color"
+        android:text="達克瓦茲  +65元"
+        android:textColor="@color/w"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbHorse" />
+
+    <CheckBox
+        android:id="@+id/chbHorse"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="48dp"
+        android:buttonTint="@color/check_color"
+        android:text="馬卡龍      +45元"
+        android:textColor="@color/w"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksGroup" />
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="140dp"
+        android:text="主食 : "
+        android:textColor="@color/w"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/mainGroup"
+        android:layout_width="217dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="45dp"
+        android:theme="@style/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdbRice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="蝦仁蛋炒飯  120元"
+            android:textColor="@color/w"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbNoodles"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="紅燒牛肉麵  230元"
+            android:textColor="@color/w"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbMilk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="牛奶鍋          280元"
+            android:textColor="@color/w"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textDessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="120dp"
+        android:text="甜點 : "
+        android:textColor="@color/w"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDrinks" />
+
+    <RadioGroup
+        android:id="@+id/drinksGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="45dp"
+        android:theme="@style/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainGroup">
+
+        <RadioButton
+            android:id="@+id/rdbWhite"
+            android:layout_width="197dp"
+            android:layout_height="50dp"
+            android:text="白玉歐蕾    70元"
+            android:textColor="@color/w"
+            android:textSize="20sp"
+            tools:ignore="DuplicateIds" />
+
+        <RadioButton
+            android:id="@+id/rdbMarry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="血腥瑪莉  320元"
+            android:textColor="@color/w"
+            android:textSize="20sp"
+            tools:ignore="DuplicateIds" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/b"
+        android:textColor="@color/black"
+        android:text="確認"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
